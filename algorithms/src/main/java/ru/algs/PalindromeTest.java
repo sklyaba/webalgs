@@ -23,6 +23,23 @@ public class PalindromeTest {
         }
         else System.out.println("Nothing else!");
 
+        int a = 1;
+        int n = 10;
+
+        boolean isThree = isEvenSum(1, 10);
+        System.out.println(isThree);
+
+    }
+
+    private static boolean isEvenSum(int a, int n) {
+        boolean isThree=false;
+        for (int i = n; i>a; i = i-3) {
+            if (i == 3) {
+                isThree = true;
+                break;
+            }
+        }
+        return isThree;
     }
 
     private static String getReversed(String secondOne) {
@@ -38,4 +55,5 @@ public class PalindromeTest {
         }
         return K;
     }
+
 }
