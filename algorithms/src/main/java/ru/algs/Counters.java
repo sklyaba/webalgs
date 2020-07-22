@@ -1,11 +1,14 @@
 package ru.algs;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.math.BigInteger;
 
 /**
  * @author dan on 7/21/20
  */
 
+@Slf4j
 public class Counters {
 
     public static void main(String[] args) {
@@ -20,6 +23,8 @@ public class Counters {
             bigInteger=bigInteger.add(new BigInteger(String.valueOf(initTable[i])));
         }
         System.out.println(bigInteger);
+        log.info(bigInteger.toString());
+
     }
 
     private static int get3multiplyNum() {
